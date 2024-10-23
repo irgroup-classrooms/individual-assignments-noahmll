@@ -4,3 +4,12 @@ TO DO LIST of things I wish to learn this semester:
   - [ ] what is GitHub?
   - [ ] how do I use GitHub?
   - [ ] what is this course for?
+----------
+| Element | Markdown Syntax |
+| ----------- | ----------- |
+| Headings | # H1 |
+|  | ## H2 |
+|  | ### H3 |
+| Bold | ** |
+| italic | * |
+| ... | ... |
