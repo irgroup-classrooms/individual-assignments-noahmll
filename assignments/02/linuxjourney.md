@@ -73,7 +73,7 @@ See: https://linuxjourney.com/lesson/the-shell
    What is the command to clear the terminal?  
    `clear`  
 10. #### cp (Copy)
-    What flag do you need to specify to copy over a directory?
+    What flag do you need to specify to copy over a directory?  
     `-r`
 11. #### mv (Move)
     
