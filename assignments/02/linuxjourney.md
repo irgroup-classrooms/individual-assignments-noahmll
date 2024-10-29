@@ -76,4 +76,24 @@ See: https://linuxjourney.com/lesson/the-shell
     What flag do you need to specify to copy over a directory?  
     `-r`
 11. #### mv (Move)
-    
+    How do you rename a file called cat to dog?  
+    `mv cat dog`
+12. #### mkdir (Make Directory)
+    What command is use to make a directory?  
+    `mkdir`
+13. #### rm (Remove)
+    How do you remove a file called myfile?  
+    `rm myfile`  
+    Exercise:
+    ```sh
+    $ touch -- -file
+    $ rm -file
+    ```
+14. #### find
+    What option should I specify for find if I want to search by name?  
+    `-name`  
+    Exercise:  
+    ```sh
+    $ cd
+    $ find . -name net
+    ```
