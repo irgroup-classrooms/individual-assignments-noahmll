@@ -12,23 +12,23 @@ You can add your command line in- and outputs directly to this README file. Alte
 
 1. Extract all email addresses from the text.
 ```sh 
-grep -Eo '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' contacts.csv
+$ grep -Eo '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' contacts.csv
 ``` 
 2. Extract all phone numbers from the text.
 ```sh 
-grep -Eo ''
+$ grep -Po '\(\d{3}\) \d{3}-\d{4}' contacts.csv
 ``` 
 3. Extract all names that start with the letter ‘J’.
 ```sh 
-
+$ grep -Eo '^(J[[:alpha:]]+ [[:alpha:]]+)' contacts.csv
 ``` 
 4. Extract all street names that contain the word 'St'.
 ```sh 
-
+$ grep -Eo '([[:digit:]]{3} [[:alpha:]]+ St)' contacts.csv
 ``` 
 5. Extract all addresses in ‘USA’.
 ```sh 
-
+$ grep -Eo '([[:digit:]]{3} [[:alpha:]]+ St.+USA)' contacts.csv
 ``` 
 6. Extract the last names of all people.
 ```sh 
