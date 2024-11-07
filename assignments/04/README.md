@@ -11,43 +11,43 @@ Remember that you can use different tools like `grep`, `awk`, or `sed` to use re
 You can add your command line in- and outputs directly to this README file. Alternatively, you can write a bash script with all commands and commit it to this directory.
 
 1. Extract all email addresses from the text.
-``` 
-
+```sh 
+grep -Eo '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}' contacts.csv
 ``` 
 2. Extract all phone numbers from the text.
-``` 
-
+```sh 
+grep -Eo ''
 ``` 
 3. Extract all names that start with the letter ‘J’.
-``` 
+```sh 
 
 ``` 
 4. Extract all street names that contain the word 'St'.
-``` 
+```sh 
 
 ``` 
 5. Extract all addresses in ‘USA’.
-``` 
+```sh 
 
 ``` 
 6. Extract the last names of all people.
-``` 
+```sh 
 
 ``` 
 7. Extract all email domains (part after the @ sign).
-``` 
+```sh 
 
 ``` 
 8.	Extract all instances of the first name ‘David’ along with their full address (street and city).
-``` 
+```sh 
 
 ``` 
 9.	Find all entries where the phone number ends with ‘7’.
-``` 
+```sh 
 
 ``` 
 10.	Extract all instances of first names that end with the letter 'e'.
-``` 
+```sh 
 
 ``` 
 
