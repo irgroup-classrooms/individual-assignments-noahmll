@@ -20,15 +20,15 @@ $ grep -Po '\(\d{3}\) \d{3}-\d{4}' contacts.csv
 ``` 
 3. Extract all names that start with the letter ‘J’.
 ```sh 
-$ grep -Eo '^(J[[:alpha:]]+ [[:alpha:]]+)' contacts.csv
+$ grep -Po '^(J\w+ \w+)' contacts.csv
 ``` 
 4. Extract all street names that contain the word 'St'.
 ```sh 
-$ grep -Eo '([[:digit:]]{3} [[:alpha:]]+ St)' contacts.csv
+$ grep -Po '(\d{3} \w+ St)' contacts.csv
 ``` 
 5. Extract all addresses in ‘USA’.
 ```sh 
-$ grep -Eo '([[:digit:]]{3} [[:alpha:]]+ St.+USA)' contacts.csv
+$ grep -Po '(\d{3}.+USA)' contacts.csv
 ``` 
 6. Extract the last names of all people.
 ```sh 
