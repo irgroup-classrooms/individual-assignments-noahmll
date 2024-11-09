@@ -20,35 +20,35 @@ $ grep -Po '\(\d{3}\) \d{3}-\d{4}' contacts.csv
 ``` 
 3. Extract all names that start with the letter ‘J’.
 ```sh 
-$ grep -Po '^(J\w+ \w+)' contacts.csv
+$ grep -Po '^J\w+ \w+' contacts.csv
 ``` 
 4. Extract all street names that contain the word 'St'.
 ```sh 
-$ grep -Po '(\d{3} \w+ St)' contacts.csv
+$ grep -Po '\d{3} \w+ St' contacts.csv
 ``` 
 5. Extract all addresses in ‘USA’.
 ```sh 
-$ grep -Po '(\d{3}.+USA)' contacts.csv
+$ grep -Po '\d{3}.+USA' contacts.csv
 ``` 
 6. Extract the last names of all people.
 ```sh 
-
+$ grep -Po '^\w+ \K\w+' contacts.csv
 ``` 
 7. Extract all email domains (part after the @ sign).
 ```sh 
-
+$ grep -Po '[A-Za-z0-9._%+-]+@\K[A-Za-z0-9.-]+\.[A-Za-z]{2,}' contacts.csv
 ``` 
 8.	Extract all instances of the first name ‘David’ along with their full address (street and city).
 ```sh 
-
+$ grep -Po '^David .*USA' contacts.csv
 ``` 
 9.	Find all entries where the phone number ends with ‘7’.
 ```sh 
-
+$ grep -Po '\(\d{3}\) \d{3}-\d{3}7' contacts.csv
 ``` 
 10.	Extract all instances of first names that end with the letter 'e'.
 ```sh 
-
+$ grep -Po '^\w+e ' contacts.csv
 ``` 
 
 ## Parsing product orders with Python
