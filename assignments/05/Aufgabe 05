@@ -1,1 +1,7 @@
-Aufgabe
+Aufgabe 05  
+  
+Spalten  
+1: Leer    - sollte aber ID (vom Datentyp int) sein  
+2: char    - Charakter des Filmes der gerade spricht (vom Datentyp string), möglicherweise irreführend, wegen Datentyp char  
+3: dialog  - Das was der Charakter sagt, in Anführungsstrichen (vom Datentyp string)  
+4: movie   - Der Film, in dem der Charakter den Dialog spricht (vom Datentyp string)  
