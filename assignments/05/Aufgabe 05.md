@@ -86,6 +86,18 @@ Transformationen in Open Refine:
     "repeat": false,
     "repeatCount": 10,
     "description": "Text transform on cells in column dialog using expression grel:value.replace(\",\",\"\").replace(/\\s{2,}/,\" \").replace(/^ | $/,\"\")"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Column",
+    "newColumnName": "ID",
+    "description": "Rename column Column to ID"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "char",
+    "newColumnName": "character",
+    "description": "Rename column char to character"
   }
 ]
 ```
