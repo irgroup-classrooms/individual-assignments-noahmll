@@ -105,5 +105,7 @@ Transformationen in Open Refine:
 3.  
 ```sh
 $ wc –l lotr-scripts_cleaned.csv
-  2391  32334 211671 lotr-scripts_cleaned.csv
+2391 lotr-scripts_cleaned.csv
+$ wc -w lotr-scripts_cleaned.csv
+32334 lotr-scripts_cleaned.csv
 ```
