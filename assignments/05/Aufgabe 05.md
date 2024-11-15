@@ -105,7 +105,17 @@ Transformationen in Open Refine:
 3.  
 ```sh
 $ wc –l lotr-scripts_cleaned.csv
-2391 lotr-scripts_cleaned.csv
+  2391 lotr-scripts_cleaned.csv
 $ wc -w lotr-scripts_cleaned.csv
-32334 lotr-scripts_cleaned.csv
+  32334 lotr-scripts_cleaned.csv
 ```
+4.  
+```sh
+$ cat lotr-scripts_cleaned.csv | awk -F',' '{print $4}' lotr-scripts_cleaned.csv | sort | uniq -c
+    507 The Fellowship of the Ring
+    873 The Return of the King
+   1010 The Two Towers
+      1 movie
+```
+
+
